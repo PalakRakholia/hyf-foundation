@@ -1,0 +1,3 @@
+this is assignment's goal is to practice the assignment workflow. 
+
+Assignment is more about practicing git commands along with pushing changes to repository
