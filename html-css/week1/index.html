@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Secure payment form for completing your order." />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>PAYMENT FORM</title>
+</head>
+
+<body class="page">
+    <main>
+        <div class="main-heading">SOME HEADER</div>
+        <p class="main-description">some optional stuff.</P>
+    </main>
+    <div class="container">
+        <header class="header">
+            <div class="heading">Order Summary</div>
+            <article class="item">
+                <p>Total</p>
+                <p>$333 / month</p>
+            </article>
+            <div class="divider"></div>
+            <article class="item total">
+                <p>Total</p>
+                <p>$100</p>
+            </article>
+        </header>
+
+        <form>
+            <div class="payment">
+                <h2 class="section-title">Payment Method</h2>
+                <section class="payment-card">
+                    <article class="payment-card-item">
+                        <img src="https://raw.githubusercontent.com/HackYourFuture-CPH/program/refs/heads/main/courses/foundation/html-and-css/order-form-task/cards.webp?raw=true"
+                            alt="cards icons">
+                        <p class="payment-content">Credit / Debit</p>
+                    </article>
+                    <article class="payment-card-item option--disabled">
+                        <img src="https://github.com/HackYourFuture-CPH/program/blob/main/courses/foundation/html-and-css/order-form-task/paypal.webp?raw=true"
+                            alt="paypal icon" class="paypal">
+                        <p class="payment-content">PayPal</p>
+                    </article>
+                </section>
+            </div>
+
+            <div class="card-section">
+                <h2 class="section-title">Card Info</h2>
+                <div class="card-panel">
+                    <div class="card-number-item">
+                        <label for="card-number">Card number</label>
+                        <input type="text" id="card-number" placeholder="1234 1234 1234 1234" name="card-number"
+                            class="card-number" required />
+                    </div>
+                    <div class="exp-date-item">
+                        <label for="exp-date">Expiry date</label>
+                        <input type="text" id="exp-date" placeholder="MM / YY" name="exp-date" class="exp-date"
+                            required />
+                    </div>
+                    <div class="sec-code-item">
+                        <label for="sec-code">Security code</label>
+                        <input type="text" id="sec-code" placeholder="CVV" name="sec-code" class="sec-code" required />
+                    </div>
+                </div>
+            </div>
+
+            <input type="submit" id="buy-now" value="Buy now" class="primary-btn" />
+            <p class="need-help">Need Help?</p>
+        </form>
+    </div>
+</body>
+
+</html>
