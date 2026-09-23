@@ -1,0 +1,44 @@
+point 14
+countries file with two country name.
+
+point 15
+palak@homelaptop:~/src/github.com/PalakRakholia/HYF/branch-exercise$ git log --oneline
+6552c54 (HEAD -> master) Add country file
+
+point 16
+countries file with 4 country name
+
+point 17 
+palak@homelaptop:~/src/github.com/PalakRakholia/HYF/branch-exercise$ git log --oneline
+61c2a46 (HEAD -> add-countries) Add new countries
+6552c54 (master) Add country file
+
+point 18
+cities file with two name
+country file with two name
+
+point 19 
+palak@homelaptop:~/src/github.com/PalakRakholia/HYF/branch-exercise$ git log --oneline
+c60f47d (HEAD -> add-cities) Add city file
+6552c54 (master) Add country file
+
+point 22
+after merging add-countries branch, now main have 4 countries like add-countries branch's countries file(total 4 countries in both branch)
+
+point 23
+palak@homelaptop:~/src/github.com/PalakRakholia/HYF/branch-exercise$ git log --oneline
+61c2a46 (HEAD -> master, add-countries) Add new countries
+6552c54 Add country file
+
+point 24
+after merging add-cities branch, now main have cities file like add-cities branch.
+
+point 25
+git log --oneline
+0d39b11 (HEAD -> master) Merge branch 'add-cities'
+c60f47d (add-cities) Add city file
+61c2a46 (add-countries) Add new countries
+6552c54 Add country file
+
+point 26
+All content from both branch is now on main
