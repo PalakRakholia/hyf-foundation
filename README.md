@@ -27,7 +27,7 @@ I also reviewed and modified Copilot’s suggestions when they didn’t match my
 
 ### Reflection
 
-My reflections on the assignment can be found in [reflection.md](./reflection.md), covering:
+My reflections on the assignment can be found in [Reflection.md](./Reflection.md), covering:
 
 - What I learned from using AI
 - Changes I made to Copilot's suggestions
