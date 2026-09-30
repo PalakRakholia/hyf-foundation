@@ -51,6 +51,7 @@ body {
     cursor: pointer;
     font-size: 25px;
     place-items: center;
+    flex-shrink: 0;
 }
 
 .surprise-me-button:hover {
@@ -303,4 +304,34 @@ a {
     background: var(--terracotta);
     color: #fff;
     cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    main {
+        grid-template-columns: 1fr;
+        padding: 16px;
+    }
+
+    .header {
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .header img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .timeline-item ul {
+        padding-left: 10px;
+    }
+
+    section {
+        padding: 16px;
+    }
 }
