@@ -53,13 +53,13 @@ const peterVolumeInMeters =
 const peterHousePrice =
   peterVolumeInMeters * 2.5 * 1000 + peterHouseGardenSizeInM2 * 300;
 
-if (peterHouseCost > peterHousePrice) {
+if (peterHouseCost >= peterHousePrice) {
   console.log(
-    `Peter is paying ${peterHouseCost}$ which is too much as compared to House Price: ${peterHousePrice}$`,
+    `Estimated House Cost is $${peterHouseCost} so, Peter is paying too much as compared to House Price: $${peterHousePrice}`,
   );
 } else {
   console.log(
-    `Peter is paying ${peterHouseCost}$ which is too little as compared to House Price: ${peterHousePrice}$`,
+    `Estimated House Cost is $${peterHouseCost} so, Peter is paying too little as compared to House Price: $${peterHousePrice}`,
   );
 }
 
@@ -76,13 +76,13 @@ const juliaVolumeInMeters =
 const juliaHousePrice =
   juliaVolumeInMeters * 2.5 * 1000 + juliaHouseGardenSizeInM2 * 300;
 
-if (juliaHouseCost > juliaHousePrice) {
+if (juliaHouseCost >= juliaHousePrice) {
   console.log(
-    `Julia is paying ${juliaHouseCost}$ which is too much as compared to House Price: ${juliaHousePrice}$`,
+    `Estimated House Cost is $${juliaHouseCost} so, Julia is paying too much as compared to House Price: $${juliaHousePrice}`,
   );
 } else {
   console.log(
-    `Julia is paying ${juliaHouseCost}$ which is too little as compared to House Price: ${juliaHousePrice}$`,
+    `Estimated House Cost is $${juliaHouseCost} so, Julia is paying too little as compared to House Price: $${juliaHousePrice}`,
   );
 }
 
