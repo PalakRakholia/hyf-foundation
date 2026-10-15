@@ -48,8 +48,7 @@ const weekDay = [
   "Friday",
   "Saturday",
 ];
-let currentDate = new Date();
-currentDate = currentDate.getDay();
+const currentDate = new Date().getDay()
 //console.log(currentDate);
 
 function getEventWeekday(day) {
