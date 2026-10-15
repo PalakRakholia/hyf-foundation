@@ -52,7 +52,7 @@ const currentDate = new Date().getDay()
 //console.log(currentDate);
 
 function getEventWeekday(day) {
-  let eventDay = (currentDate + day) % 7;
+  const eventDay = (currentDate + day) % 7;
   //console.log(`eventDay ${eventDay}`);
   return weekDay[eventDay];
 }
