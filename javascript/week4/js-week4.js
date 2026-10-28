@@ -144,16 +144,16 @@ function getReply(command) {
     return `${toDoArr[0]} is the first item of your todo`;
   }
 }
-// console.log(getReply("Hello my name is Benjamin"));
-// console.log(getReply("What is my name"));
-// console.log(getReply("Add fishing to my todo"));
-// console.log(getReply("Add singing in the shower to my todo"));
-// console.log(getReply("Add dancing in the shower to my todo"));
-// console.log(getReply("Remove fishing from my todo"));
-// console.log(getReply("What is on my todo?"));
-// console.log(getReply("What day is it today?"));
-// console.log(getReply("what is 3 + 3"));
-//console.log(getReply("what is 3 plus 3"));
-// console.log(getReply("what is 4 * 12"));
-// console.log(getReply("Set a timer for 4 minutes"));
-// console.log(getReply("WhaT is the first ITEM on my todo?"));
+console.log(getReply("Hello my name is Benjamin"));
+console.log(getReply("What is my name"));
+console.log(getReply("Add fishing to my todo"));
+console.log(getReply("Add singing in the shower to my todo"));
+console.log(getReply("Add dancing in the shower to my todo"));
+console.log(getReply("Remove fishing from my todo"));
+console.log(getReply("What is on my todo?"));
+console.log(getReply("What day is it today?"));
+console.log(getReply("what is 3 + 3"));
+console.log(getReply("what is 3 plus 3"));
+console.log(getReply("what is 4 * 12"));
+console.log(getReply("Set a timer for 4 minutes"));
+console.log(getReply("WhaT is the first ITEM on my todo?"));
