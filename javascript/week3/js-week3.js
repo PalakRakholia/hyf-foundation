@@ -9,10 +9,12 @@ const names = [
   "Katrine",
   "Tala",
 ];
-const nameToRemove = "Ahmad";
 
+const nameToRemove = "Ahmad";
 const indexOfName = names.indexOf(nameToRemove);
-names.splice(indexOfName, 1);
+if (indexOfName !== -1) {
+  names.splice(indexOfName, 1);
+}
 
 console.log(names); // ['Peter', 'Yana', 'kristina', 'Rasmus', 'Samuel', 'Katrine', 'Tala']
 
@@ -22,7 +24,7 @@ const travelInformation = {
   destinationDistance: 432,
 };
 
-function notThisFunctionName(travelInformation) {
+function getTravelTime(travelInformation) {
   //if object is empty, argument passed is not an object, object'key speed and destination is negative or 0
   if (
     travelInformation == null ||
@@ -36,11 +38,10 @@ function notThisFunctionName(travelInformation) {
     travelInformation.destinationDistance / travelInformation.speed;
   const calculatedHrs = Math.floor(calculatedTime);
   const calculatedMins = Math.floor((calculatedTime - calculatedHrs) * 60);
-  //.toFixed(0) can also be used
   return `${calculatedHrs} hours and ${calculatedMins} minutes`;
 }
 
-const travelTime = notThisFunctionName(travelInformation);
+const travelTime = getTravelTime(travelInformation);
 console.log(travelTime); // 8 hours and 38 minutes
 
 // Series duration of my life
@@ -78,21 +79,21 @@ function logOutSeriesText(seriesDurations) {
       eachSeriesDaysInMins + eachSeriesHrsInMins + eachSeriesMins;
     //toPrecision() return strings hence convert into number
     const calcPercentage = Number(
-      ((timeInMins / lifeSpanInMins) * 100).toPrecision(2),
+      ((timeInMins / lifeSpanInMins) * 100)
     );
-    totalPercent = Number((totalPercent + calcPercentage).toPrecision(2));
-    console.log(`${eachSeriesName} took ${calcPercentage}% of my life`);
+    totalPercent = Number((totalPercent + calcPercentage));
+    console.log(`${eachSeriesName} took ${calcPercentage.toPrecision(2)}% of my life`);
   }
-  console.log(`In total that is ${totalPercent}% of my life`);
+  console.log(`In total that is ${totalPercent.toPrecision(2)}% of my life`);
 }
 
 logOutSeriesText(seriesDurations);
 
 //NOnoN0nOYes (Note taking app)
-notes = [];
+const notes = [];
 
 function saveNote(content, id) {
-  notes.push({ ["content"]: content, ["id"]: id });
+  notes.push({ content, id });
 }
 
 saveNote("Pick up groceries", 1);
@@ -101,6 +102,9 @@ saveNote("Do laundry", 2);
 console.log(notes);
 
 function getNote(id) {
+  if (!id) {
+    throw new Error("No valid id");
+  }
   for (let i = 0; i < notes.length; i++) {
     if (notes[i].id === id) {
       return notes[i];
@@ -127,11 +131,7 @@ function addActivity(activity, duration) {
   const todaysDate = new Date();
   const date = todaysDate.toLocaleDateString("en-US");
 
-  activities.push({
-    ["date"]: date,
-    ["activity"]: activity,
-    ["duration"]: duration,
-  });
+  activities.push({ date, activity, duration });
 }
 
 addActivity("Youtube", 40);
@@ -143,7 +143,7 @@ console.log(activities);
 function showStatus(activities) {
   let totalDuration = 0;
   const activityCount = activities.length;
-  if (activities == null) {
+  if (!activities.length) {
     console.log(`Add some activities before calling showStatus`);
   }
   for (let i = 0; i < activities.length; i++) {
