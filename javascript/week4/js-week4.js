@@ -26,7 +26,7 @@ function getReply(command) {
       commandNew.includes(" from my to-do"))
   ) {
     //indexOf('Add ')-gives index of A and not of whole word hence + 'add ' length
-    const firstIndex = commandNew.indexOf("Add ") + "Add ".length;
+    const firstIndex = commandNew.indexOf("add ") + "add ".length;
     const secondIndex = commandNew.indexOf(" to my todo");
     const todo = commandNew.slice(firstIndex, secondIndex).trim();
     toDoArr.push(todo);
