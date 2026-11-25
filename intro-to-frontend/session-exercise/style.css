@@ -1,0 +1,67 @@
+:root {
+    --background: #F5F7FB;
+    --header: #4169E1;
+}
+
+* {
+    margin: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    background-color: var(--background);
+    line-height: 1.5;
+}
+
+body.darkthemeclass {
+    background-color: black;
+    color: white;
+}
+
+.sections {
+    background-color: white;
+    border-radius: 16px;
+    padding: 10px;
+}
+
+.exercise-heading {
+    font-size: 20px;
+    color: var(--header);
+    font-weight: 600;
+}
+
+ul,
+h1, div{
+    font-size: 16px;
+    color: black;
+}
+
+button {
+    background-color: var(--header);
+    border: 1px solid wheat;
+    border-radius: 10px;
+    height: 40px;
+    width: 110px;
+    color: wheat;
+}
+
+img {
+    transition: opacity 0.5s ease;
+    width: 30%;
+    height: 50%;
+}
+
+.breed {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.exercise-section{
+    background-color: var(--background);
+    border-radius: 10px;
+    padding: 5px;
+}
