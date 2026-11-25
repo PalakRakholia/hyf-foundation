@@ -1,0 +1,32 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f9fbfd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 10px;
+  border: 1px solid #E8C66A;
+  background-color: #F5E8D0;
+  color: #252B43;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 10px;
+}
